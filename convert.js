@@ -8,8 +8,8 @@ function inchToFeet(inch) {
 function inchToFeet2(inch) {
   const feetFraction = inch / 12;
   const feetNumber = parseInt(feetFraction);
-  const inchs = inch % 12;
-  return `${feetNumber} feet ${inchs} inch`;
+  const feetRemaining = inch % 12;
+  return `${feetNumber} feet ${feetRemaining} inch`;
 }
 
 const shuvoHeight = inchToFeet2(75);
